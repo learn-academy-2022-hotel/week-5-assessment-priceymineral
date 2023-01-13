@@ -13,7 +13,19 @@
 // --------------------1) Create a function that takes in a string and returns a string with a coded message. The coded message converts "a" to 4, "e" to 3, "i" to 1, and "o" to 0.
 
 // a) Create a test with expect statements using the variables provided.
+// create test for codify fxn
+// describe 
+// it changes the following characters: "a" to 4, "e" to 3, "i" to 1, and "o" to 0.
+// the actual result should equal the expected
+// check for good error 
 
+describe('codify', () => {
+    it('it changes "a" to 4, "e" to 3, "i" to 1, and "o" to 0', () => {
+        expect(codify(secretCodeWord1)).toEqual('L4ck4d41s1c4l')
+        expect(codify(secretCodeWord2)).toEqual('G0bbl3dyg00k')
+        expect(codify(secretCodeWord3)).toEqual('3cc3ntr1c')
+    })
+})
 const secretCodeWord1 = "Lackadaisical"
 // Expected output: "L4ck4d41s1c4l"
 const secretCodeWord2 = "Gobbledygook"
@@ -22,6 +34,19 @@ const secretCodeWord3 = "Eccentric"
 // Expected output: "3cc3ntr1c"
 
 // b) Create the function that makes the test pass.
+// initialize codify functino which takes one string input
+// iterate over the string 
+// replace each letter accordingly
+// OR
+// search a method that replaces words directly w/o need for a loop
+// return the new word
+const codify = (str) => {
+    // str = str.replace('a', '4').replace('e', '3').replace('i', '1').replace('0', 'o') // only changes the first instance
+    str = str.replace(/a/gi, '4').replace(/e/gi, '3').replace(/i/gi, '1').replace(/o/gi, 0)
+
+    return str
+}
+
 
 // --------------------2) Create a function that takes in an array of words and a single letter and returns an array of all the words containing that particular letter.
 

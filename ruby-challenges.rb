@@ -119,4 +119,4 @@ p my_bike.bike_info # "This BMW model bike has 2 wheels and is currently going 0
 p my_bike.pedal_faster(10) # 10
 p my_bike.brake(15) # 0
 p my_bike.pedal_faster(10) # 10
-p my_bike.brake(5) # 5
+p my_bike.brake(5) # 0
