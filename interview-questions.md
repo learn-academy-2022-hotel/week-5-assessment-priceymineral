@@ -10,7 +10,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 Your answer: Calling 'super' imports the attributes and methods from the parent class specified in the declaration (denoted by the (>) operator), i.e. the subclass inherits from the parent class. The attributes must be specified as the arguments for super() in the same order as the parent class. 
 
-Researched answer: Calling super inside the initialize method of a class initializes that instance variables inherited from the parent class. super called inside of a method in a class calls the method in the parent class with the same name as the method in the subclass it was called in. super() can be used in cases where the number of arguments between the methods in the parent and subclass are different. 
+Researched answer: Calling super inside the initialize method of a class initializes that instance variables inherited from the parent class. super called inside of a method in a class calls the method in the parent class with the same name as the method in the subclass it was called in. super() (with parentheses) can be used in cases where the number of arguments between the methods in the parent and subclass are different. 
 https://www.rubyguides.com/2018/09/ruby-super-keyword/
 
 2. What is a gem?
@@ -37,18 +37,18 @@ Researched answer: In SQL, a table can have only one primary key and it cannot b
 
 5. What are the HTTP verbs? What is each verb's corresponding CRUD action?
 
-Your answer: Hyper Text TP verbs are standard words used to interact with a server. Each term PUT, PATCH, DELETE, GET, performs a specific action. GET retrieves information from the server, DELETE erases records, PUT and PATCH modify or alter the existing data.
+Your answer: Hyper Text TP verbs are standard words used to interact with a server. Each term PUT (Update), PATCH, DELETE (Delete), GET (Read), performs a specific action. GET retrieves information from the server, DELETE erases records, PUT and PATCH modify or alter the existing data.
 
 Researched answer: Hypertext Transfer Protocol (HTTP) verbs share some common features but each has a specific use:
-- GET
-- HEAD
-- POST
-- PUT
-- PATCH
-- DELETE
-- OPTIONS
-- TRACE
-- CONNECT
+- GET (Read)
+- HEAD 
+- POST (Create)
+- PUT (Update)
+- PATCH 
+- DELETE (Delete)
+- OPTIONS 
+- TRACE 
+- CONNECT 
 
 ## Looking Ahead: Terms for Next Week
 
@@ -62,4 +62,4 @@ Research and define the following terms to the best of your ability.
 
 4. ERB: A gem in which ruby can be used used to create templates for text or html documents. The use of ruby allows for functionality in creating lines of text without the ruby code showing in the final product.
 
-5. API: Application Program Interface is the defined endpoints and instructions used to access a specific server. With an API the code to perform CRUD actions is specified. 
+5. API: Application Program Interface is the defined endpoints and instructions used to access a specific server. With an API the code to perform CRUD actions is specified, i.e. the definitions to establish communications between 2 applications is specified.
